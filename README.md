@@ -88,7 +88,7 @@
     ```shell
     #$> cat air10.txt
     Je danse le mia
-    #$> python air10.py "a.txt"
+    #$> python air10.py "air10.txt"
     Je danse le mia
     ```
 - [ ] [11 - Afficher une pyramide](./air11.py)
