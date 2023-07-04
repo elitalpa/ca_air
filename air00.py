@@ -12,9 +12,19 @@
 import sys
 
 ### Functions ###
-def my_function(string_to_cut, string_separator):
-    array = string_to_cut
-    # algo
+def my_split(string_to_cut, string_separator):
+    array = []
+    i = 0
+
+    for char in string_to_cut:
+        if char not in string_separator:
+            if len(array) <= i:
+                array.append(char)
+            else:
+                array[i] += char
+        else:
+            i += 1
+
     return array
 
 def handle_argument_errors():
@@ -30,10 +40,15 @@ handle_argument_errors()
 
 ### Parsing ###
 string_input = sys.argv[1]
-string_separator = [" "]
+
+ascii_space = 32
+ascii_new_line = 10
+ascii_tab = 9
+string_separator = [chr(ascii_space), chr(ascii_new_line), chr(ascii_tab)]
 
 ### Problem Solving ###
-function_result = my_function(string_input, string_separator)
+split_result = my_split(string_input, string_separator)
 
 ### Result ###
-print(function_result)
+print(chr(ascii_new_line).join(split_result))
+# print("\n".join(split_result))
