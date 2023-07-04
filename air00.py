@@ -51,4 +51,3 @@ split_result = my_split(string_input, string_separator)
 
 ### Result ###
 print(chr(ascii_new_line).join(split_result))
-# print("\n".join(split_result))
