@@ -1,7 +1,7 @@
 # ca_air
 
 ## Index
-- [ ] [00 - Split](./air00.py)
+- [x] [00 - Split](./air00.py)
 - [ ] [01 - Split en fonction](./air01.py)
 - [ ] [02 - Concat](./air02.py)
 - [ ] [03 - Chercher l’intrus](./air03.py)
@@ -19,7 +19,7 @@
 
 ## Sujets
 
-- [ ] [00 - Split](./air00.py)
+- [x] [00 - Split](./air00.py)
     ```shell
     #$> python air00.py "Bonjour les gars"
     Bonjour
