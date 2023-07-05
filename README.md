@@ -2,7 +2,7 @@
 
 ## Index
 - [x] [00 - Split](./air00.py)
-- [ ] [01 - Split en fonction](./air01.py)
+- [x] [01 - Split en fonction](./air01.py)
 - [ ] [02 - Concat](./air02.py)
 - [ ] [03 - Chercher l’intrus](./air03.py)
 - [ ] [04 - Un seul à la fois](./air04.py)
@@ -26,7 +26,7 @@
     les
     gars
     ```
-- [ ] [01 - Split en fonction](./air01.py)
+- [x] [01 - Split en fonction](./air01.py)
     ```shell
     #$> python air01.py "Crevette magique dans la mer des étoiles" "la"
     Crevette magique dans
