@@ -8,12 +8,28 @@
 ##     return tableau
 #
 # Afficher error et quitter le programme en cas de problèmes d’arguments.
+
 import sys
 
 ### Functions ###
-def my_function(string_to_cut, string_separator):
-    array = string_to_cut
-    # algo
+def my_split_by(string_to_cut, string_separator):
+    array = []
+    i = 0
+    j = 0
+
+    while i < len(string_to_cut):
+        if string_to_cut[i:i + len(string_separator)] != string_separator:
+            if len(array) <= j:
+                array.append(string_to_cut[i])
+                i += 1
+            else:
+                array[j] += string_to_cut[i]
+                i += 1
+        else:
+            array.append("")
+            j += 1
+            i += len(string_separator)
+
     return array
 
 def handle_argument_errors():
@@ -29,10 +45,10 @@ handle_argument_errors()
 
 ### Parsing ###
 string_input = sys.argv[1]
-string_separator = [chr(32), chr(10), chr(9)]
+string_separator = sys.argv[2]
 
 ### Problem Solving ###
-function_result = my_function(string_input, string_separator)
+split_by_result = my_split_by(string_input, string_separator)
 
 ### Result ###
-print(function_result)
+print("\n".join(split_by_result))
