@@ -6,7 +6,7 @@
 - [x] [02 - Concat](./air02.py)
 - [x] [03 - Chercher l’intrus](./air03.py)
 - [x] [04 - Un seul à la fois](./air04.py)
-- [ ] [05 - Sur chacun d’entre eux](./air05.py)
+- [x] [05 - Sur chacun d’entre eux](./air05.py)
 - [ ] [06 - Contrôle de pass sanitaire](./air06.py)
 - [ ] [07 - Insertion dans un tableau trié](./air07.py)
 - [ ] [08 - Mélanger deux tableaux triés](./air08.py)
@@ -50,7 +50,7 @@
     #$> python air04.py "Hello milady,    bien ou quoi ??"
     Helo milady, bien ou quoi ?
     ```
-- [ ] [05 - Sur chacun d’entre eux](./air05.py)
+- [x] [05 - Sur chacun d’entre eux](./air05.py)
     ```shell
     #$> python air05.py 1 2 3 4 5 "+2"
     3 4 5 6 7
