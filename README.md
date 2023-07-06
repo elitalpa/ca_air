@@ -4,7 +4,7 @@
 - [x] [00 - Split](./air00.py)
 - [x] [01 - Split en fonction](./air01.py)
 - [x] [02 - Concat](./air02.py)
-- [ ] [03 - Chercher l’intrus](./air03.py)
+- [x] [03 - Chercher l’intrus](./air03.py)
 - [ ] [04 - Un seul à la fois](./air04.py)
 - [ ] [05 - Sur chacun d’entre eux](./air05.py)
 - [ ] [06 - Contrôle de pass sanitaire](./air06.py)
@@ -37,7 +37,7 @@
     #$> python air02.py "je" "teste" "des" "trucs" " "
     Je teste des trucs
     ```
-- [ ] [03 - Chercher l’intrus](./air03.py)
+- [x] [03 - Chercher l’intrus](./air03.py)
     ```shell
     #$> python air03.py 1 2 3 4 5 4 3 2 1
     5
