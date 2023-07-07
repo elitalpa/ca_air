@@ -14,7 +14,12 @@ import sys
 ### Functions ###
 def my_pass_controller(strings_array, string):
     new_strings_array = strings_array[:]
-    # algo
+    
+    for item in strings_array:
+        for char in item:
+            if char == string.upper() or char == string.lower():
+                new_strings_array.remove(item)
+
     return new_strings_array
 
 def handle_argument_errors():
@@ -42,4 +47,4 @@ input_string = sys.argv[-1::][0][0]
 my_pass_controller_result = my_pass_controller(input_strings_array, input_string)
 
 ### Result ###
-print(my_pass_controller_result)
+print(", ".join(my_pass_controller_result))

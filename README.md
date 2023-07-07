@@ -7,7 +7,7 @@
 - [x] [03 - Chercher l’intrus](./air03.py)
 - [x] [04 - Un seul à la fois](./air04.py)
 - [x] [05 - Sur chacun d’entre eux](./air05.py)
-- [ ] [06 - Contrôle de pass sanitaire](./air06.py)
+- [x] [06 - Contrôle de pass sanitaire](./air06.py)
 - [ ] [07 - Insertion dans un tableau trié](./air07.py)
 - [ ] [08 - Mélanger deux tableaux triés](./air08.py)
 - [ ] [09 - Rotation vers la gauche](./air09.py)
@@ -58,7 +58,7 @@
     #$> python air05.py 10 11 12 20 "-5"
     5 6 7 15
     ```
-- [ ] [06 - Contrôle de pass sanitaire](./air06.py)
+- [x] [06 - Contrôle de pass sanitaire](./air06.py)
     ```shell
     #$> python air06.py "Michel" "Albert" "Thérèse" "Benoit" "t"
     Michel
