@@ -13,9 +13,23 @@
 import sys
 
 ### Functions ###
-def sorted_insert(array, new_element):
-    new_array = array[:]
-    # algo
+def sorted_insert(input_array, input_new_element):
+    array = [int(item) for item in input_array]
+    new_element = int(input_new_element)
+
+    new_array = []
+    inserted = False
+    
+    for item in array:
+        if not inserted and item > new_element:
+            new_array.append(new_element)
+            inserted = True
+
+        new_array.append(item)
+
+    if not inserted:
+        new_array.append(new_element)
+
     return new_array
 
 def handle_argument_errors():
@@ -28,7 +42,7 @@ def handle_argument_errors():
             print("error: Your arguments must be integers.")
             exit()
 
-    if not sys.argv[-1::][0][0].strip('-').isdigit():
+    if not sys.argv[-1::][0].strip('-').isdigit():
         print("error: Your last argument must be an integer.")
         exit()
 
@@ -36,11 +50,11 @@ def handle_argument_errors():
 handle_argument_errors()
 
 ### Parsing ###
-array = sys.argv[1:-1]
-new_element = sys.argv[-1::][0][0]
+input_array = sys.argv[1:-1]
+input_new_element = sys.argv[-1::][0]
 
 ### Problem Solving ###
-sorted_insert_result = sorted_insert(array, new_element)
+sorted_insert_result = sorted_insert(input_array, input_new_element)
 
 ### Result ###
-print(sorted_insert_result)
+print(" ".join([str(item) for item in sorted_insert_result]))
