@@ -66,7 +66,7 @@
     #$> python air06.py "Michel" "Albert" "Thérèse" "Benoit" "a"
     Michel, Thérèse, Benoit
     ```
-- [ ] [07 - Insertion dans un tableau trié](./air07.py)
+- [x] [07 - Insertion dans un tableau trié](./air07.py)
     ```shell
     #$> python air07.py 1 3 4 2
     1 2 3 4
