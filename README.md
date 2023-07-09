@@ -8,7 +8,7 @@
 - [x] [04 - Un seul à la fois](./air04.py)
 - [x] [05 - Sur chacun d’entre eux](./air05.py)
 - [x] [06 - Contrôle de pass sanitaire](./air06.py)
-- [ ] [07 - Insertion dans un tableau trié](./air07.py)
+- [x] [07 - Insertion dans un tableau trié](./air07.py)
 - [ ] [08 - Mélanger deux tableaux triés](./air08.py)
 - [ ] [09 - Rotation vers la gauche](./air09.py)
 - [ ] [10 - Afficher le contenu](./air10.py)
