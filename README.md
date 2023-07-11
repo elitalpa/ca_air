@@ -11,7 +11,7 @@
 - [x] [07 - Insertion dans un tableau trié](./air07.py)
 - [x] [08 - Mélanger deux tableaux triés](./air08.py)
 - [x] [09 - Rotation vers la gauche](./air09.py)
-- [ ] [10 - Afficher le contenu](./air10.py)
+- [x] [10 - Afficher le contenu](./air10.py)
 - [ ] [11 - Afficher une pyramide](./air11.py)
 - [ ] [12 - Le roi des tris](./air12.py)
 - [ ] [13 - Meta exercice](./air13.py)
@@ -84,7 +84,7 @@
     #$> python air09.py "Michel" "Albert" "Thérèse" "Benoit"
     Albert, Thérèse, Benoit, Michel
     ```
-- [ ] [10 - Afficher le contenu](./air10.py)
+- [x] [10 - Afficher le contenu](./air10.py)
     ```shell
     #$> cat a.txt
     Je danse le mia
