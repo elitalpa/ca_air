@@ -10,7 +10,7 @@
 - [x] [06 - Contrôle de pass sanitaire](./air06.py)
 - [x] [07 - Insertion dans un tableau trié](./air07.py)
 - [x] [08 - Mélanger deux tableaux triés](./air08.py)
-- [ ] [09 - Rotation vers la gauche](./air09.py)
+- [x] [09 - Rotation vers la gauche](./air09.py)
 - [ ] [10 - Afficher le contenu](./air10.py)
 - [ ] [11 - Afficher une pyramide](./air11.py)
 - [ ] [12 - Le roi des tris](./air12.py)
@@ -79,7 +79,7 @@
     #$> python air08.py 10 20 30 fusion 15 25 35
     10 15 20 25 30 35
     ```
-- [ ] [09 - Rotation vers la gauche](./air09.py)
+- [x] [09 - Rotation vers la gauche](./air09.py)
     ```shell
     #$> python air09.py "Michel" "Albert" "Thérèse" "Benoit"
     Albert, Thérèse, Benoit, Michel
