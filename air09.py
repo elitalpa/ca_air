@@ -15,7 +15,10 @@ import sys
 def my_rotation(array):
     new_array = []
 
-    # algo
+    for i in range(1, len(array)):
+        new_array.append(array[i])
+
+    new_array.append(array[0])
 
     return new_array
 
@@ -34,4 +37,4 @@ input_array = sys.argv[1:]
 my_rotation_result = my_rotation(input_array)
 
 ### Result ###
-print(" ".join(my_rotation_result))
+print(", ".join(my_rotation_result))
