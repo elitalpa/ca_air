@@ -34,4 +34,4 @@ input_filename = sys.argv[1]
 read_file_result = read_file(input_filename)
 
 ### Result ###
-print((read_file_result), end="")
+print(read_file_result, end="")
