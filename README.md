@@ -12,7 +12,7 @@
 - [x] [08 - Mélanger deux tableaux triés](./air08.py)
 - [x] [09 - Rotation vers la gauche](./air09.py)
 - [x] [10 - Afficher le contenu](./air10.py)
-- [ ] [11 - Afficher une pyramide](./air11.py)
+- [x] [11 - Afficher une pyramide](./air11.py)
 - [ ] [12 - Le roi des tris](./air12.py)
 - [ ] [13 - Meta exercice](./air13.py)
 - [ ] [14 - Air : ok](./air14.py)
@@ -91,7 +91,7 @@
     #$> python air10.py "a.txt"
     Je danse le mia
     ```
-- [ ] [11 - Afficher une pyramide](./air11.py)
+- [x] [11 - Afficher une pyramide](./air11.py)
     ```shell
     #$> python air11.py O 5
         O
