@@ -10,12 +10,34 @@
 # Afficher error et quitter le programme en cas de problèmes d’arguments.
 # Wikipedia vous présentera une belle description de cet algorithme de tri.
 
+import sys
+
 ### Functions ###
+def my_quick_sort(array):
+    new_array = []
+
+    # algo
+
+    return new_array
+
+def handle_argument_errors():
+    if len(sys.argv) <= 2:
+        print("error: At least two arguments are required.")
+        exit()
+
+    for arg in sys.argv[1:]:
+        if not arg.strip('-').isdigit():
+            print("error: Your arguments must be integers.")
+            exit()
 
 ### Error Handling ###
+handle_argument_errors()
 
 ### Parsing ###
+input_array = sys.argv[1:]
 
 ### Problem Solving ###
+my_quick_sort_result = my_quick_sort(input_array)
 
 ### Result ###
+print(' '.join([str(i) for i in my_quick_sort_result]))
