@@ -14,9 +14,18 @@ import sys
 
 ### Functions ###
 def my_quick_sort(array):
+    array = [int(x) for x in array]
     new_array = []
 
-    # algo
+    if len(array) <= 1:
+        return array
+
+    pivot = array[0]
+
+    smaller = [x for x in array[1:] if x <= pivot]
+    greater = [x for x in array[1:] if x > pivot]
+
+    new_array = my_quick_sort(smaller) + [pivot] + my_quick_sort(greater)
 
     return new_array
 
