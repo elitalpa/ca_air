@@ -24,7 +24,7 @@ def find_intruder(values_list):
 
 def handle_argument_errors():
     if len(sys.argv) < 4:
-        print("error: At least three arguments are needed.")
+        print("error: At least three arguments are needed.", file=sys.stderr)
         exit()
 
 ### Error Handling ###
