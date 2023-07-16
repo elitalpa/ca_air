@@ -29,10 +29,10 @@ def my_split(string_to_cut, string_separator):
 
 def handle_argument_errors():
     if len(sys.argv) != 2:
-        print("error: Only one argument is allowed.")
+        print("error: Only one argument is allowed.", file=sys.stderr)
         exit()
     if sys.argv[1].strip('-').isdigit():
-        print("error: Please provide a string argument.")
+        print("error: Please provide a string argument.", file=sys.stderr)
         exit()
 
 ### Error Handling ###
