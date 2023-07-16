@@ -14,14 +14,14 @@ def read_file(filename):
 
 def handle_argument_errors():
     if len(sys.argv) != 2:
-        print("error: One argument (the filename) is required.")
+        print("error: One argument (the filename) is required.", file=sys.stderr)
         exit()
 
     try:
         with open(sys.argv[1], 'r'):
             pass
     except FileNotFoundError:
-        print("error: File not found.")
+        print("error: File not found.", file=sys.stderr)
         exit()
 
 ### Error Handling ###
