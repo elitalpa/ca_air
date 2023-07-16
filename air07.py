@@ -34,16 +34,16 @@ def sorted_insert(input_array, input_new_element):
 
 def handle_argument_errors():
     if len(sys.argv) < 4:
-        print("error: At least three arguments are needed.")
+        print("error: At least three arguments are needed.", file=sys.stderr)
         exit()
 
     for arg in sys.argv[1:-1]:
         if not arg.strip('-').isdigit():
-            print("error: Your arguments must be integers.")
+            print("error: Your arguments must be integers.", file=sys.stderr)
             exit()
 
     if not sys.argv[-1::][0].strip('-').isdigit():
-        print("error: Your last argument must be an integer.")
+        print("error: Your last argument must be an integer.", file=sys.stderr)
         exit()
 
 ### Error Handling ###
