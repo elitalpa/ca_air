@@ -37,7 +37,7 @@ def handle_argument_errors():
     contains_fusion_string = False
 
     if len(sys.argv) < 6:
-        print("error: At least 5 arguments are required.")
+        print("error: At least 5 arguments are required.", file=sys.stderr)
         exit()
 
     for arg in sys.argv[1:]:
@@ -45,11 +45,11 @@ def handle_argument_errors():
             contains_fusion_string = True
 
         if not arg.strip('-').isdigit() and not arg == "fusion":
-            print('error: All of your arguments must be integers except the "fusion" string which separates the two sorted lists of integers.')
+            print('error: All of your arguments must be integers except the "fusion" string which separates the two sorted lists of integers.', file=sys.stderr)
             exit()
 
     if not contains_fusion_string:
-        print('error: The "fusion" string is missing.')
+        print('error: The "fusion" string is missing.', file=sys.stderr)
         exit()
     
     fusion_index = sys.argv[1:].index("fusion") + 1
@@ -58,7 +58,7 @@ def handle_argument_errors():
     input_array2 = sys.argv[fusion_index + 1:]
 
     if len(input_array1) < 2 or len(input_array2) < 2:
-        print('error: There must be at least two numbers before and after the "fusion" string.')
+        print('error: There must be at least two numbers before and after the "fusion" string.', file=sys.stderr)
         exit()
 
 ### Error Handling ###
