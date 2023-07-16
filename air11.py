@@ -21,15 +21,15 @@ def generate_pyramid(char, number_of_floors):
 
 def handle_argument_errors():
     if len(sys.argv) != 3:
-        print("error: Two arguments are required: the charachter and the number of floors for your pyramid.")
+        print("error: Two arguments are required: the charachter and the number of floors for your pyramid.", file=sys.stderr)
         exit()
 
     if len(sys.argv[1]) != 1:
-        print("error: Your first argument can only be one charachter.")
+        print("error: Your first argument can only be one charachter.", file=sys.stderr)
         exit()
 
     if not sys.argv[2].isdigit() or int(sys.argv[2]) <= 0:
-        print("error: Your second argument needs to be a positive integer above 0.")
+        print("error: Your second argument needs to be a positive integer above 0.", file=sys.stderr)
         exit()
 
 ### Error Handling ###
