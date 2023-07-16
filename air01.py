@@ -34,10 +34,10 @@ def my_split_by(string_to_cut, string_separator):
 
 def handle_argument_errors():
     if len(sys.argv) != 3:
-        print("error: Two arguments are needed.")
+        print("error: Two arguments are needed.", file=sys.stderr)
         exit()
     if sys.argv[1].strip('-').isdigit() or sys.argv[2].strip('-').isdigit():
-        print("error: Your arguments must be strings.")
+        print("error: Your arguments must be strings.", file=sys.stderr)
         exit()
 
 ### Error Handling ###
