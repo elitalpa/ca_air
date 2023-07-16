@@ -23,19 +23,19 @@ def perform_operation_on_each_integer(integers_list, operation):
 
 def handle_argument_errors():
     if len(sys.argv) < 4:
-        print("error: At least three arguments are needed.")
+        print("error: At least three arguments are needed.", file=sys.stderr)
         exit()
 
     for arg in sys.argv[1:-1]:
         if not arg.strip('-').isdigit():
-            print("error: Your arguments must be integers.")
+            print("error: Your arguments must be integers.", file=sys.stderr)
             exit()
 
     if sys.argv[-1::][0][0] != '+' and sys.argv[-1::][0][0] != '-':
-        print("error: Your last argument must begin with the operator + or - .")
+        print("error: Your last argument must begin with the operator + or - .", file=sys.stderr)
         exit()
     if not sys.argv[-1::][0][1:].isdigit():
-        print("error: Your last argument must contain only integers after the + or - operator.")
+        print("error: Your last argument must contain only integers after the + or - operator.", file=sys.stderr)
         exit()
 
 ### Error Handling ###
