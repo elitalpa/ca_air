@@ -31,12 +31,12 @@ def my_quick_sort(array):
 
 def handle_argument_errors():
     if len(sys.argv) <= 2:
-        print("error: At least two arguments are required.")
+        print("error: At least two arguments are required.", file=sys.stderr)
         exit()
 
     for arg in sys.argv[1:]:
         if not arg.strip('-').isdigit():
-            print("error: Your arguments must be integers.")
+            print("error: Your arguments must be integers.", file=sys.stderr)
             exit()
 
 ### Error Handling ###
