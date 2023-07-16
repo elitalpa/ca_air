@@ -24,7 +24,7 @@ def my_rotation(array):
 
 def handle_argument_errors():
     if len(sys.argv) < 3:
-        print("error: At least 2 arguments are required.")
+        print("error: At least 2 arguments are required.", file=sys.stderr)
         exit()
 
 ### Error Handling ###
