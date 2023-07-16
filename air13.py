@@ -17,7 +17,7 @@ def test_exercises():
 
 def handle_argument_errors():
     if len(sys.argv) > 1:
-        print("error: No arguments required.")
+        print("error: No arguments required.", file=sys.stderr)
         exit()
 
 ### Error Handling ###
