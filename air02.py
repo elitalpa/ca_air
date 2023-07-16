@@ -23,12 +23,12 @@ def my_concat(strings_array, separator):
 
 def handle_argument_errors():
     if len(sys.argv) < 4:
-        print("error: At least three arguments are needed.")
+        print("error: At least three arguments are needed.", file=sys.stderr)
         exit()
 
     for arg in sys.argv[1:-1]:
         if arg.strip('-').isdigit():
-            print("error: Your arguments must be strings.")
+            print("error: Your arguments must be strings.", file=sys.stderr)
             exit()
 
 ### Error Handling ###
