@@ -18,10 +18,10 @@ def remove_adjacent_duplicates(char_string):
 
 def handle_argument_errors():
     if len(sys.argv) != 2:
-        print("error: Only one argument is required.")
+        print("error: Only one argument is required.", file=sys.stderr)
         exit()
     if sys.argv[1].strip('-').isdigit():
-        print("error: Your argument must be a string.")
+        print("error: Your argument must be a string.", file=sys.stderr)
         exit()
 
 ### Error Handling ###
