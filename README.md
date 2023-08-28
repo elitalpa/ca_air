@@ -13,7 +13,7 @@
 - [x] [09 - Rotation vers la gauche](./air09.py)
 - [x] [10 - Afficher le contenu](./air10.py)
 - [x] [11 - Afficher une pyramide](./air11.py)
-- [ ] [12 - Le roi des tris](./air12.py)
+- [x] [12 - Le roi des tris](./air12.py)
 - [ ] [13 - Meta exercice](./air13.py)
 - [ ] [14 - Air : ok](./air14.py)
 
