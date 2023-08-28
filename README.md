@@ -100,7 +100,7 @@
      OOOOOOO
     OOOOOOOOO
     ```
-- [ ] [12 - Le roi des tris](./air12.py)
+- [x] [12 - Le roi des tris](./air12.py)
     ```shell
     #$> python air12.py 6 5 4 3 2 1
     1 2 3 4 5 6
