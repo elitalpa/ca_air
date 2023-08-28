@@ -14,7 +14,7 @@
 - [x] [10 - Afficher le contenu](./air10.py)
 - [x] [11 - Afficher une pyramide](./air11.py)
 - [x] [12 - Le roi des tris](./air12.py)
-- [ ] [13 - Meta exercice](./air13.py)
+- [x] [13 - Meta exercice](./air13.py)
 - [ ] [14 - Air : ok](./air14.py)
 
 ## Sujets
@@ -105,7 +105,7 @@
     #$> python air12.py 6 5 4 3 2 1
     1 2 3 4 5 6
     ```
-- [ ] [13 - Meta exercice](./air13.py)
+- [x] [13 - Meta exercice](./air13.py)
     ```shell
     #$> python air13.py
     air00 (1/3) : success
